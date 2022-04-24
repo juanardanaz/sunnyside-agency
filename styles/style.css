@@ -33,6 +33,7 @@
     --dark-desaturated-cyan: hsl(167, 40%, 24%);
     --dark-blue: hsl(198, 62%, 26%);
     --dark-moderate-cyan: hsl(168, 34%, 41%);
+    --light-moderate-cyan: hsl(167, 45%, 70%);
     
     /* ========= COLORS NEUTRAL ========= */
     --very-dark-desaturated-blue: hsl(212, 27%, 19%);
@@ -80,12 +81,17 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: var(--pale);
+}
+
 /*=============== HEADER ===============*/
 .header {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1;
 }
 
 .image-header {
@@ -119,6 +125,15 @@ html {
     font-family: var(--body-font-a);
     font-weight: 600;
     padding-left: 4rem;
+    cursor: pointer;
+}
+
+.nav_link:hover {
+    text-transform: uppercase;
+}
+
+.nav_link:active {
+    color: hsl(0, 0%, 0%);
 }
 
 
@@ -188,7 +203,7 @@ h2 {
 
 .title-detail {
     font-family: var(--body-font-a);
-    color: var(--very-dark-desaturated-blue);
+    color: var(--dark-grayish-blue);
     line-height: 1.6;
     padding-bottom: 2rem;
 }
@@ -222,9 +237,19 @@ h2 {
 
 .box-text-info-left h2 {
     color: var(--dark-desaturated-cyan);
+    font-size: 2rem;
+}
+
+.box-text-info-left .title-detail {
+    color: var(--dark-desaturated-cyan);
 }
 
 .box-text-info-right h2 {
+    color: var(--dark-blue);
+    font-size: 2rem;
+}
+
+.box-text-info-right .title-detail {
     color: var(--dark-blue);
 }
 
@@ -266,7 +291,6 @@ h2 {
 }
 
 .testimonial_card {
-    /* background-color: var(--white); */
     padding: 1.25rem 1.5rem;
     width: 50%;
     height: auto;
@@ -320,4 +344,66 @@ h2 {
 }
 
 /*=============== FOOTER ===============*/
+.footer {
+    background-color: var(--light-moderate-cyan);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 232rem;
+}
 
+.footer_container {
+    padding: 1rem 0 4rem;
+}
+
+.footer_logo {
+    max-width: 40%;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+
+.footer_list,
+.footer_social {
+    list-style-type: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_list {
+    margin-top: 1rem;
+}
+
+.footer_social {
+    margin-top: 4rem;
+}
+
+.footer_link,
+.footer_social_link {
+    font-family: var(--body-font-a);
+    cursor: pointer;
+}
+
+.footer_link {
+    padding: 1.5rem;
+    color: var(--dark-moderate-cyan);
+    text-decoration: none;
+}
+
+.footer_link:hover {
+    color: var(--white);
+}
+
+.footer_link:active {
+    color: var(--very-dark-desaturated-blue);
+}
+
+.footer_social_link {
+    padding: 1rem;
+}
+
+.social_icon:hover {
+    fill: var(--white);
+}
