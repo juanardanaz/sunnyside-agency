@@ -23,7 +23,7 @@
                 <a href="#"><img src="./assets/img/logo.svg" alt="agency logo" class="main-logo"></a>
             </div>
             
-            <div class="nav_menu">
+            <div class="nav_menu" id="nav-menu">
                 <ul class="nav_list">
                     <li class="nav_item">
                         <a href="#about" class="nav_link">About</a>
@@ -40,6 +40,13 @@
                 </ul>
             </div>
 
+            <!--=============== HAMBURGER MENU ===============-->
+            <div class="menu-hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
         </nav>
     </header>
 
@@ -49,7 +56,7 @@
             <div class="intro-text">
                 <h1>We are creatives</h1>
                 <span class="arrow-down-icon">
-                    <img src="./assets/img/icon-arrow-down.svg" alt="arrow down">
+                    <img src="./assets/img/icon-arrow-down.svg" alt="arrow down" class="arrow">
                 </span>
             </div>
         </section>
@@ -94,7 +101,7 @@
                         <p class="title-detail">Great design makes you memorable. We deliver artwork that uderscores your brand message 
                             and captures potential clients´ attention.</p>
                     </div>
-                    <img src="./assets/img/desktop/image-graphic-design.jpg" alt="cherrys" class="box-two-image">
+                    <img src="./assets/img/desktop/image-graphic-design.jpg" alt="cherrys" class="box-three-image">
                 </div>
 
                 <div class="box-info">
@@ -103,7 +110,7 @@
                         <p class="title-detail">Increase your credibillity by getting the most stunning, high-quality photos that 
                             improve your business image.</p>
                     </div>
-                    <img src="./assets/img/desktop/image-photography.jpg" alt="orange" class="box-two-image">
+                    <img src="./assets/img/desktop/image-photography.jpg" alt="orange" class="box-four-image">
                 </div>
 
             </div>
@@ -156,10 +163,10 @@
         <!--=============== IMAGES WALL ===============-->
         <section class="wall-section">
             <div class="image_wall_container">
-                <img src="./assets/img/desktop/image-gallery-milkbottles.jpg" alt="milkbottles" class="image_wall"></img>
-                <img src="./assets/img/desktop/image-gallery-orange.jpg" alt="orange" class="image_wall"></img>
-                <img src="./assets/img/desktop/image-gallery-cone.jpg" alt="ice-cream cone" class="image_wall"></img>
-                <img src="./assets/img/desktop/image-gallery-sugarcubes.jpg" alt="sugarcubes" class="image_wall"></img>
+                <img src="./assets/img/desktop/image-gallery-milkbottles.jpg" alt="milkbottles" class="image_wall" id="milkbottles">
+                <img src="./assets/img/desktop/image-gallery-orange.jpg" alt="orange" class="image_wall" id="orange">
+                <img src="./assets/img/desktop/image-gallery-cone.jpg" alt="ice-cream cone" class="image_wall" id="cone">
+                <img src="./assets/img/desktop/image-gallery-sugarcubes.jpg" alt="sugarcubes" class="image_wall" id="sugarcubes">
             </div>
         </section>
     </main>
@@ -203,7 +210,6 @@
                     </a>
                 </li>
 
-
                 <li>
                     <a href="https://ar.pinterest.com/" class="footer_social_link" target="_blank">
                         <img src="./assets/img/icon-pinterest.svg" alt="pinterest" class="social_icon">
@@ -213,5 +219,8 @@
 
         </div>
     </footer>
+
+    <!--=============== JS ===============-->
+    <script src="./script/script.js"></script>
 </body>
 </html>

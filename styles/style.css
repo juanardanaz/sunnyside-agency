@@ -126,6 +126,7 @@ body {
     font-weight: 600;
     padding-left: 4rem;
     cursor: pointer;
+    transition: 0.7s ease;
 }
 
 .nav_link:hover {
@@ -136,6 +137,21 @@ body {
     color: hsl(0, 0%, 0%);
 }
 
+/* Hamburger Menu */
+.menu-hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--white);
+}
 
 /*=============== MAIN ===============*/
 /*=============== INTRO SECTION ===============*/
@@ -157,7 +173,6 @@ body {
     letter-spacing: 8px;
     margin-bottom: 6rem;
 }
-
 
 /*=============== GRID SECTION ===============*/
 .grid-images {
@@ -187,7 +202,9 @@ body {
 }
 
 .box-info-image,
-.box-two-image {
+.box-two-image,
+.box-three-image,
+.box-four-image {
     max-width: 100%;
     height: 100%;
 }
@@ -407,3 +424,414 @@ h2 {
 .social_icon:hover {
     fill: var(--white);
 }
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices - Laptop/Large Screen */
+@media screen and (max-width: 1200px) {
+    .intro-text h1 {
+        font-size: 3rem;
+        margin-bottom: 4rem;
+    }
+    
+    .grid-images {
+        position: relative;
+        top: 12rem;
+    }
+
+    .testimonial {
+        position: absolute;
+        top: 132rem;
+    }
+
+    .box-text-info-left,
+    .box-text-info-right {
+        position: absolute;
+        top: 83%;
+    }
+
+    .wall-section {
+        position: absolute;
+        top: 172rem;
+    }
+
+    .footer {
+        position: absolute;
+        top: 195rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .intro {
+        position: relative;
+        padding-top: 8rem;
+    }
+    
+    .intro-text h1{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .grid-images {
+        position: relative;
+        top: 12rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .title-detail {
+        font-size: 11px;
+    }
+
+    .box-text-info {
+        position: relative;
+        top: 10%;
+        width: 57%;
+        left: 10%;
+    }
+
+    .box-text-info-left {
+        position: absolute;
+        top: 83%;
+        left: 10%;
+    }
+
+    .box-text-info-right {
+        position: absolute;
+        top: 83%;
+        right: 9%;
+    }
+
+    .testimonial {
+        position: absolute;
+        top: 112rem;
+    }
+
+    .wall-section {
+        position: absolute;
+        top: 153rem;
+    }
+
+    .footer {
+        position: absolute;
+        top: 172rem;
+    }
+}
+
+/* For medium devices - Tablets */
+@media screen and (max-width: 768px) {
+    .menu-hamburger {
+        display: block;
+    }
+
+    .menu-hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu-hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav_menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: var(--pale);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav_item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .intro-text h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .arrow {
+        width: 3%;
+    }
+
+    .grid-images {
+        position: relative;
+        top: 8.9rem;
+    }
+
+    .box-text-info {
+        position: relative;
+        top: 0%;
+        width: 57%;
+        left: 10%;
+    }
+
+    .box-text-info-left {
+        position: absolute;
+        top: 81%;
+        width: 35%;
+        left: 1%;
+    }
+
+    .box-text-info-right {
+        position: absolute;
+        top: 81%;
+        right: 8%;
+    }
+
+    .box-text-info-left h2,
+    .box-text-info-right h2 {
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .testimonial {
+        position: absolute;
+        top: 88rem;
+    }
+
+    .section_title {
+        font-size: 1.2rem;
+    }
+
+    .wall-section {
+        position: absolute;
+        top: 134rem;
+    }
+
+    .footer {
+        position: absolute;
+        top: 148.9rem;;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .intro {
+        position: relative;
+        padding-top: 6rem;
+    }
+    
+    .intro-text h1 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .arrow {
+        width: 3%;
+    }
+
+    .grid-images {
+        position: relative;
+        top: 6rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .title-detail {
+        font-size: 9px;
+    }
+
+    .box-info {
+        width: 50%;
+        height: 240px;
+    }
+
+    .box-info-image {
+        content: url(../assets/img/mobile/image-transform.jpg);
+        width: 100%;
+        height: auto;
+    }
+
+    .box-two-image {
+        content: url(../assets/img/mobile/image-stand-out.jpg);
+        width: 100%;
+        height: auto;
+    }
+
+    .box-text-info {
+        top: -10%;
+        left: -5%;
+        width: 80%;
+    }
+
+    .box-text-info-left {
+        top: 79%;
+        left: -1%;
+    }
+
+    .box-text-info-right {
+        top: 79%;
+        right: 6%;
+    }
+
+    .testimonial {
+        position: absolute;
+        top: 65rem;
+    }
+
+    .section_title {
+        font-size: 1rem;
+    }
+
+    .wall-section {
+        position: absolute;
+        top: 119rem;
+    }
+
+    .footer {
+        position: absolute;
+        top: 130rem;
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 320px) {
+    .intro {
+        position: relative;
+        padding-top: 8rem;
+    }
+
+    .intro-text h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .arrow {
+        width: 10%;
+    }
+
+    .logo-agency {
+        position: relative;
+        left: -20px;
+    }
+
+    .menu-hamburger {
+        position: relative;
+        right: -20px;
+    }
+    
+    .image-header {
+        content: url(../assets/img/mobile/image-header.jpg);
+    }
+
+    .nav_list {
+        display: none;
+    }
+
+    .grid-images {
+        position: relative;
+        top: 6rem;
+    }
+
+    .container-grid-images {
+        flex-direction: column;
+    }
+
+    .box-info {
+        width: 100%;
+        height: auto;
+    }
+
+    .box-text-info-left {
+        top: 72%;
+        left: 17%;
+    }
+
+    .box-text-info-right {
+        top: 89%;
+        right: 32%;
+    }
+
+    .box-text-info-left h2, .box-text-info-right h2 {
+        font-size: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .testimonial {
+        position: absolute;
+        top: 124rem;
+    }
+
+    .testimonial_container {
+        width: 100%;
+        position: absolute;
+        right: 0;
+        left: -50px;
+    }
+
+    .section_title {
+        font-size: 1rem;
+        margin-bottom: -2rem;
+        letter-spacing: 4px;
+    }
+
+    .swiper-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial_card {
+        width: 100%;
+        height: auto;
+    }
+
+    .testimonial_description_review {
+        width: 100%;
+        position: relative;
+        left: 0%;
+    }
+
+    .wall-section {
+        position: absolute;
+        top: 207rem;
+    }
+
+    .image_wall_container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .image_wall {
+        width: 50%;
+        height: auto;
+    }
+
+    #milkbottles {
+        content: url(../assets/img/mobile/image-gallery-milkbottles.jpg);
+    }
+
+    #orange {
+        content: url(../assets/img/mobile/image-gallery-orange.jpg);
+    }
+
+    #cone {
+        content: url(../assets/img/mobile/image-gallery-cone.jpg);
+    }
+
+    #sugarcubes {
+        content: url(../assets/img/mobile/image-gallery-sugar-cubes.jpg);
+    }
+
+    .footer {
+        position: absolute;
+        top: 227rem;
+    }
+}
+
+
+
