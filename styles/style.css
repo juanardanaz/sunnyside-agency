@@ -438,15 +438,15 @@ h2 {
         top: 12rem;
     }
 
-    .testimonial {
-        position: absolute;
-        top: 132rem;
-    }
-
     .box-text-info-left,
     .box-text-info-right {
         position: absolute;
         top: 83%;
+    }
+
+    .testimonial {
+        position: absolute;
+        top: 132rem;
     }
 
     .wall-section {
@@ -459,6 +459,30 @@ h2 {
         top: 195rem;
     }
 }
+
+/* @media only screen and (min-width: 1200px) {
+    .box-info-image,
+    .box-two-image,
+    .box-three-image,
+    .box-four-image {
+        width: 100%;
+    }
+
+    .testimonial {
+        position: absolute;
+        top: 178rem;
+    }
+
+    .wall-section {
+        position: absolute;
+        top: 215rem;
+    }
+
+    .footer {
+        position: absolute;
+        top: 246.5rem;
+    }
+} */
 
 @media screen and (max-width: 992px) {
     .intro {
@@ -737,33 +761,95 @@ h2 {
         top: 6rem;
     }
 
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .title-detail {
+        font-size: 14px;
+    }
+
     .container-grid-images {
         flex-direction: column;
     }
 
+    .button-more-one, 
+    .button-more-two {
+        font-size: 14px;
+    }
+
     .box-info {
         width: 100%;
+        height: 88px;
+        /* background-color: red; */
+    }
+
+    .box-text-info {
+        z-index: 1;
+        position: relative;
+        top: 15.5rem;
+        text-align: center;
+    }
+
+    .box-text-info.box-two {
+        z-index: 1;
+        position: relative;
+        top: 36.5rem;
+    }
+
+    .box-info-image {
+        position: absolute;
+        top: 0px;
+    }
+
+    .box-two-image {
+        position: absolute;
+        top: 37rem;
+    }
+
+    .box-three-image {
+        content: url(../assets/img/mobile/image-graphic-design.jpg);
+        width: 100%;
         height: auto;
+        position: absolute;
+        top: 75rem;
+    }
+
+    .box-four-image {
+        content: url(../assets/img/mobile/image-photography.jpg);
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 107rem;
     }
 
     .box-text-info-left {
-        top: 72%;
-        left: 17%;
+        top: 284%;
+        left: -4%;
+        z-index: 1;
+        width: 78%;
     }
 
     .box-text-info-right {
-        top: 89%;
-        right: 32%;
+        right: -4%;
+        position: absolute;
+        top: 126rem;
+        z-index: 1;
+        width: 80%;
     }
 
     .box-text-info-left h2, .box-text-info-right h2 {
-        font-size: 1rem;
+        font-size: 1.8rem;
         padding-bottom: 1rem;
+    }
+
+    .box-text-info-left .title-detail, .box-text-info-right .title-detail {
+        font-size: 12px;
     }
 
     .testimonial {
         position: absolute;
-        top: 124rem;
+        top: 168rem;
     }
 
     .testimonial_container {
@@ -797,7 +883,7 @@ h2 {
 
     .wall-section {
         position: absolute;
-        top: 207rem;
+        top: 245rem;
     }
 
     .image_wall_container {
@@ -829,7 +915,11 @@ h2 {
 
     .footer {
         position: absolute;
-        top: 227rem;
+        top: 265rem;
+    }
+
+    .footer_logo {
+        max-width: 60%;
     }
 }
 
