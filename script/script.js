@@ -1,13 +1,8 @@
 // HAMBURGER MENU
 const hamburger = document.getElementById('hamburger');
-const navMenu = document.getElementById('nav-menu');
+const mobileMenu = document.getElementById('mobile_menu');
 
 hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navMenu.classList.toggle('active');
+    hamburger.classList.toggle('hide');
+    mobileMenu.classList.toggle('menu-mobile');
 });
-
-document.querySelectorAll('.nav_link').forEach(n => n.addEventListener('click', () => {
-    hamburger.classList.remove('active');
-    navMenu.classList.remove('active');
-}));

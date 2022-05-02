@@ -16,208 +16,187 @@
 </head>
 <body>
     <!--=============== HEADER ===============-->
-    <header class="header">
-        <nav class="nav container">
-
-            <div class="logo-agency">
-                <a href="#"><img src="./assets/img/logo.svg" alt="agency logo" class="main-logo"></a>
+    <header>
+        <!--=============== NAV-BAR ===============-->
+        <nav class="navbar">
+            <img src="./assets/img/logo.svg" alt="agency logo" class="logo">
+            <div class="menu-layout" id="mobile_menu">
+                <div class="triangle"></div>
+                <div class="menu">
+                    <ul class="nav-list">
+                        <li>
+                            <a href="#" class="nav-link">About</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">Services</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">Projects</a>
+                        </li>
+                    </ul>
+                    <div class="btn-contact">Contact</div>
+                </div>
             </div>
-            
-            <div class="nav_menu" id="nav-menu">
-                <ul class="nav_list">
-                    <li class="nav_item">
-                        <a href="#about" class="nav_link">About</a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#services" class="nav_link">Services</a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#testimonial" class="nav_link">Project</a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#contact" class="nav_link">Contact</a>
-                    </li>
-                </ul>
-            </div>
-
-            <!--=============== HAMBURGER MENU ===============-->
-            <div class="menu-hamburger" id="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-
+            <img src="./assets/img/icon-hamburger.svg" alt="hamburger" class="hamburger" id="hamburger">
         </nav>
     </header>
 
-    <!--=============== MAIN ===============-->
     <main>
-        <section class="intro" id="about">
-            <div class="intro-text">
+        <!--=============== HERO-SECTION ===============-->
+        <section class="hero-section">
+            <img src="./assets/img/mobile/image-header.jpg" alt="mobile header image" class="img-mobile">
+            <img src="./assets/img/desktop/image-header.jpg" alt="desktop header image" class="img-desktop">
+
+            <div class="hero-text">
                 <h1>We are creatives</h1>
-                <span class="arrow-down-icon">
-                    <img src="./assets/img/icon-arrow-down.svg" alt="arrow down" class="arrow">
+                <img src="./assets/img/icon-arrow-down.svg" alt="arrow down" class="arrow-down">
+            </div>
+        </section>
+
+        <!--=============== MIDDLE-SECTION ===============-->
+        <section class="middle-section">
+            <!--=============== SECTION-1 ===============-->
+            <img src="./assets/img/mobile/image-transform.jpg" alt="transform illustration" class="image-mobile">
+            <img src="./assets/img/desktop/image-transform.jpg" alt="transform illustration" class="image-desktop flex-order-2">
+            <div class="text-block flex-order-1 text-block-left">
+                <h2>Transform your brand</h2>
+                <p class="description">We are a full service creative agency specializing in helping brands go fast.
+                    Engage your clients through compelling visuals that do most of the marketing for you.
+                </p>
+                <span class="btn-wrapper">
+                    <a href="#">Learn More</a>
+                    <div class="link-decoration yellow"></div>
                 </span>
             </div>
-        </section>
 
-        <div class="image-bg">
-            <img src="./assets/img/desktop/image-header.jpg" alt="image header" class="image-header">
-        </div>
+            <!--=============== SECTION-2 ===============-->
+            <img src="./assets/img/mobile/image-stand-out.jpg" alt="stand out illustration" class="image-mobile">
+            <img src="./assets/img/desktop/image-stand-out.jpg" alt="stand out illustration" class="image-desktop flex-order-3">
+            <div class="text-block flex-order-4 text-block-right">
+                <h2>Stand out to the right audience</h2>
+                <p class="description">Using a collaborative formula of designers, researchers, photographers, videographers, 
+                    and copywriters, we´ll build and extend your brand in digital places.
+                </p>
+                <span class="btn-wrapper">
+                    <a href="#">Learn More</a>
+                    <div class="link-decoration red"></div>
+                </span>
+            </div>
 
-        <!--=============== GRID IMAGES ===============-->
-        <section class="grid-images" id="services">
-            <div class="container-grid-images">
+            <!--=============== SECTION-3 ===============-->
+            <div class="block-wrapper flex-order-5">
+                <img src="./assets/img/mobile/image-graphic-design.jpg" alt="graphic design illustration" class="image-mobile">
+                <img src="./assets/img/desktop/image-graphic-design.jpg" alt="graphic design illustration" class="image-desktop">
 
-                <div class="box-info">
-                    <div class="box-text-info container">
-                        <h2>Transform your brand</h2>
-                        <p class="title-detail">We are a full service creative agency specializing in helping brands go fast.
-                            Engage your clients through compelling visuals that do most of the marketing for you.</p>
-                        <span class="button-more-one">Learn More</span>
-                    </div>
+                <div class="text-block-overlay">
+                    <h2 class="green-tint">Graphic Design</h2>
+                    <p class="description green-tint">Great design makes you memorable. We deliver artwork that underscores your brand message 
+                        and captures potential clients´ attention.
+                    </p>
                 </div>
+            </div>
 
-                <div class="box-info">
-                    <img src="./assets/img/desktop/image-transform.jpg" alt="egg" class="box-info-image">
+            <!--=============== SECTION-4 ===============-->
+            <div class="block-wrapper flex-order-6">
+                <img src="./assets/img/mobile/image-photography.jpg" alt="photography illustration" class="image-mobile">
+                <img src="./assets/img/desktop/image-photography.jpg" alt="photography illustration" class="image-desktop">
+
+                <div class="text-block-overlay">
+                    <h2 class="blue-tint">Photography</h2>
+                    <p class="description blue-tint">Increase your credibillity by getting the most stunning, high-quality photos that 
+                        improve your business image.
+                    </p>
                 </div>
-
-                <div class="box-info">
-                    <img src="./assets/img/desktop/image-stand-out.jpg" alt="glass cup" class="box-two-image">
-                </div>
-
-                <div class="box-info">
-                    <div class="box-text-info container box-two">
-                        <h2>Stand out to the right audience</h2>
-                        <p class="title-detail">Using a collaborative formula of designers, researchers, photographers, videographers, 
-                            and copywriters, we´ll build and extend your brand in digital places.</p>
-                        <span class="button-more-two">Learn More</span>
-                    </div>
-                </div>
-
-                <div class="box-info">
-                    <div class="box-text-info-left container">
-                        <h2>Graphic Design</h2>
-                        <p class="title-detail">Great design makes you memorable. We deliver artwork that uderscores your brand message 
-                            and captures potential clients´ attention.</p>
-                    </div>
-                    <img src="./assets/img/desktop/image-graphic-design.jpg" alt="cherrys" class="box-three-image">
-                </div>
-
-                <div class="box-info">
-                    <div class="box-text-info-right container">
-                        <h2>Photography</h2>
-                        <p class="title-detail">Increase your credibillity by getting the most stunning, high-quality photos that 
-                            improve your business image.</p>
-                    </div>
-                    <img src="./assets/img/desktop/image-photography.jpg" alt="orange" class="box-four-image">
-                </div>
-
             </div>
         </section>
 
-        <!--=============== TESTIMONIALS ===============-->
-        <section class="testimonial section" id="testimonial">
-            <h2 class="section_title">Client Testimonials</h2>
-
-            <div class="testimonial_container container">
-                <div class="swiper-wrapper">
-                    <div class="testimonial_card">
-                        <img src="./assets/img/image-emily.jpg" alt="emily" class="testimonial_img">
-
-                        <p class="testimonial_description_review">
-                            We put our trust in Sunnyside and they delivered, making sure our needs
-                            were met and deadlines wer always hit.
-                        </p>
-                        <h3 class="testimonial_name">Emily R.</h3>
-                        <p class="testimonial_description_rol">Marketing Director</p>
-                    </div>
-
-                    <div class="testimonial_card">
-                        <img src="./assets/img/image-thomas.jpg" alt="thomas" class="testimonial_img">
-
-                        <p class="testimonial_description_review">
-                            Sunnyside´s enthusiasm  coupled wiht their keen interest in our brand´s success
-                            made it a satisfying and enjoyable  experience.
-                        </p>
-                        <h3 class="testimonial_name">Thomas S.</h3>
-                        <p class="testimonial_description_rol">Chief Operating Officer</p>
-                    </div>
-
-                    <div class="testimonial_card">
-                        <img src="./assets/img/image-jennie.jpg" alt="jennie" class="testimonial_img">
-
-                        <p class="testimonial_description_review">
-                            Incredible end result! Our sales increased over 400% when we worked with Sunnyside
-                            Highly recommended!
-                        </p>
-                        <h3 class="testimonial_name">Jennie F.</h3>
-                        <p class="testimonial_description_rol">Business Officer</p>
-                    </div>
+        <!--=============== TESTIMONIAL-SECTION ===============-->
+        <section class="clients-testimonial">
+            <h2>Client Testimonials</h2>
+            <div class="clients-wrapper">
+                <!--=============== CLIENT-1 ===============-->
+                <div class="client">
+                    <img src="./assets/img/image-emily.jpg" alt="Emily">
+                    <p class="testimonial">
+                        We put our trust in Sunnyside and they delivered, making sure our needs
+                        were met and deadlines were always hit.
+                    </p>
+                    <h3 class="testimonial-name">Emily R.</h3>
+                    <p class="testimonial-position">Marketing Director</p>
                 </div>
 
-                <div class="swiper-pagination"></div>
+                <!--=============== CLIENT-2 ===============-->
+                <div class="client">
+                    <img src="./assets/img/image-thomas.jpg" alt="Thomas">
+                    <p class="testimonial">
+                        Sunnyside´s enthusiasm coupled wiht their keen interest in our brand´s success
+                        made it a satisfying and enjoyable experience.
+                    </p>
+                    <h3 class="testimonial-name">Thomas S.</h3>
+                    <p class="testimonial-position">Chief Operating Officer</p>
+                </div>
+
+                <!--=============== CLIENT-3 ===============-->
+                <div class="client">
+                    <img src="./assets/img/image-jennie.jpg" alt="Jennie">
+                    <p class="testimonial">
+                        Incredible end result! Our sales increased over 400% when we worked with Sunnyside.
+                        Highly recommended!
+                    </p>
+                    <h3 class="testimonial-name">Jennie F.</h3>
+                    <p class="testimonial-position">Business Officer</p>
+                </div>
             </div>
         </section>
 
-        <!--=============== IMAGES WALL ===============-->
-        <section class="wall-section">
-            <div class="image_wall_container">
-                <img src="./assets/img/desktop/image-gallery-milkbottles.jpg" alt="milkbottles" class="image_wall" id="milkbottles">
-                <img src="./assets/img/desktop/image-gallery-orange.jpg" alt="orange" class="image_wall" id="orange">
-                <img src="./assets/img/desktop/image-gallery-cone.jpg" alt="ice-cream cone" class="image_wall" id="cone">
-                <img src="./assets/img/desktop/image-gallery-sugarcubes.jpg" alt="sugarcubes" class="image_wall" id="sugarcubes">
-            </div>
+        <!--=============== IMAGE GALLERY-SECTION ===============-->
+        <section class="gallery-section">
+            <!--=============== MOBILE-SECTION ===============-->
+            <img src="./assets/img/mobile/image-gallery-milkbottles.jpg" alt="milkbottles" class="img-mobile-gallery">
+            <img src="./assets/img/mobile/image-gallery-orange.jpg" alt="orange" class="img-mobile-gallery">
+            <img src="./assets/img/mobile/image-gallery-cone.jpg" alt="ice-cream cone" class="img-mobile-gallery">
+            <img src="./assets/img/mobile/image-gallery-sugar-cubes.jpg" alt="sugar cubes" class="img-mobile-gallery">
+
+            <!--=============== DESKTOP-SECTION ===============-->
+            <img src="./assets/img/desktop/image-gallery-milkbottles.jpg" alt="milkbottles" class="img-desktop-gallery">
+            <img src="./assets/img/desktop/image-gallery-orange.jpg" alt="orange" class="img-desktop-gallery">
+            <img src="./assets/img/desktop/image-gallery-cone.jpg" alt="ice-cream cone" class="img-desktop-gallery">
+            <img src="./assets/img/desktop/image-gallery-sugarcubes.jpg" alt="sugar cubes" class="img-desktop-gallery">
         </section>
     </main>
-
+    
     <!--=============== FOOTER ===============-->
-    <footer class="footer" id="contact">
-        <div class="footer_container container">
-            
-            <a href="#"><img src="./assets/img/logo.svg" alt="logo" class="footer_logo"></a>
+    <footer>
+        <img src="./assets/img/logo.svg" alt="logo" class="footer-logo">
+        <ul class="footer-menu">
+            <li>
+                <a href="#" class="menu-link">About</a>
+            </li>
+            <li>
+                <a href="#" class="menu-link">Services</a>
+            </li>
+            <li>
+                <a href="#" class="menu-link">Projects</a>
+            </li>
+        </ul>
 
-            <ul class="footer_list">
-                <li>
-                    <a href="#about" class="footer_link">About</a>
-                </li>
+        <ul class="social-media">
+            <li>
+                <a href="#"><img src="./assets/img/icon-facebook.svg" alt="Facebook"></a>
+            </li>
 
-                <li>
-                    <a href="#services" class="footer_link">Services</a>
-                </li>
+            <li>
+                <a href="#"><img src="./assets/img/icon-instagram.svg" alt="Instagram"></a>
+            </li>
 
-                <li>
-                    <a href="#testimonial" class="footer_link">Projects</a>
-                </li>
-            </ul>
+            <li>
+                <a href="#"><img src="./assets/img/icon-twitter.svg" alt="Twitter"></a>
+            </li>
 
-            <ul class="footer_social">
-                <li>
-                    <a href="https://es-la.facebook.com/" class="footer_social_link" target="_blank">
-                        <img src="./assets/img/icon-facebook.svg" alt="facebook" class="social_icon">
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="https://www.instagram.com/" class="footer_social_link" target="_blank">
-                        <img src="./assets/img/icon-instagram.svg" alt="instagram" class="social_icon">
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="https://twitter.com/" class="footer_social_link" target="_blank">
-                        <img src="./assets/img/icon-twitter.svg" alt="twitter" class="social_icon">
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://ar.pinterest.com/" class="footer_social_link" target="_blank">
-                        <img src="./assets/img/icon-pinterest.svg" alt="pinterest" class="social_icon">
-                    </a>
-                </li>
-            </ul>
-
-        </div>
+            <li>
+                <a href="#"><img src="./assets/img/icon-pinterest.svg" alt="Pinterest"></a>
+            </li>
+        </ul>
     </footer>
 
     <!--=============== JS ===============-->
