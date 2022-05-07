@@ -111,6 +111,11 @@ h1 {
     margin-top: 4rem;
 }
 
+.arrow-down:hover {
+    transform: translateY(.25rem);
+    transition: .2s;
+}
+
 /*=============== NAV - MENU MOBILE ===============*/
 .navbar {
     position: absolute;
