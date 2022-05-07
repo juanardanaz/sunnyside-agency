@@ -28,13 +28,15 @@
                             <a href="#" class="nav-link">About</a>
                         </li>
                         <li>
-                            <a href="#" class="nav-link">Services</a>
+                            <a href="#services" class="nav-link">Services</a>
                         </li>
                         <li>
-                            <a href="#" class="nav-link">Projects</a>
+                            <a href="#projects" class="nav-link">Projects</a>
                         </li>
                     </ul>
-                    <div class="btn-contact">Contact</div>
+                    <a href="#contact" class="link-contact">
+                        <div class="btn-contact">Contact</div>
+                    </a>
                 </div>
             </div>
             <img src="./assets/img/icon-hamburger.svg" alt="hamburger" class="hamburger" id="hamburger">
@@ -49,12 +51,14 @@
 
             <div class="hero-text">
                 <h1>We are creatives</h1>
-                <img src="./assets/img/icon-arrow-down.svg" alt="arrow down" class="arrow-down">
+                <a href="#services">
+                    <img src="./assets/img/icon-arrow-down.svg" alt="arrow down" class="arrow-down">
+                </a>
             </div>
         </section>
 
         <!--=============== MIDDLE-SECTION ===============-->
-        <section class="middle-section">
+        <section class="middle-section" id="services">
             <!--=============== SECTION-1 ===============-->
             <img src="./assets/img/mobile/image-transform.jpg" alt="transform illustration" class="image-mobile">
             <img src="./assets/img/desktop/image-transform.jpg" alt="transform illustration" class="image-desktop flex-order-2">
@@ -63,10 +67,10 @@
                 <p class="description">We are a full service creative agency specializing in helping brands go fast.
                     Engage your clients through compelling visuals that do most of the marketing for you.
                 </p>
-                <span class="btn-wrapper">
+                <div class="btn-wrapper">
                     <a href="#">Learn More</a>
-                    <div class="link-decoration yellow"></div>
-                </span>
+                    <span class="link-decoration yellow"></span>
+                </div>
             </div>
 
             <!--=============== SECTION-2 ===============-->
@@ -77,10 +81,10 @@
                 <p class="description">Using a collaborative formula of designers, researchers, photographers, videographers, 
                     and copywriters, we´ll build and extend your brand in digital places.
                 </p>
-                <span class="btn-wrapper">
+                <div class="btn-wrapper">
                     <a href="#">Learn More</a>
-                    <div class="link-decoration red"></div>
-                </span>
+                    <span class="link-decoration red"></span>
+                </div>
             </div>
 
             <!--=============== SECTION-3 ===============-->
@@ -111,7 +115,7 @@
         </section>
 
         <!--=============== TESTIMONIAL-SECTION ===============-->
-        <section class="clients-testimonial">
+        <section class="clients-testimonial" id="projects">
             <h2>Client Testimonials</h2>
             <div class="clients-wrapper">
                 <!--=============== CLIENT-1 ===============-->
@@ -152,53 +156,69 @@
         <!--=============== IMAGE GALLERY-SECTION ===============-->
         <section class="gallery-section">
             <!--=============== MOBILE-SECTION ===============-->
-            <img src="./assets/img/mobile/image-gallery-milkbottles.jpg" alt="milkbottles" class="img-mobile-gallery">
-            <img src="./assets/img/mobile/image-gallery-orange.jpg" alt="orange" class="img-mobile-gallery">
-            <img src="./assets/img/mobile/image-gallery-cone.jpg" alt="ice-cream cone" class="img-mobile-gallery">
-            <img src="./assets/img/mobile/image-gallery-sugar-cubes.jpg" alt="sugar cubes" class="img-mobile-gallery">
+            <div class="mobile-gallery">
+                <img src="./assets/img/mobile/image-gallery-milkbottles.jpg" alt="milkbottles" class="img-mobile-gallery">
+                <img src="./assets/img/mobile/image-gallery-orange.jpg" alt="orange" class="img-mobile-gallery">
+                <img src="./assets/img/mobile/image-gallery-cone.jpg" alt="ice-cream cone" class="img-mobile-gallery">
+                <img src="./assets/img/mobile/image-gallery-sugar-cubes.jpg" alt="sugar cubes" class="img-mobile-gallery">
+            </div>
 
             <!--=============== DESKTOP-SECTION ===============-->
-            <img src="./assets/img/desktop/image-gallery-milkbottles.jpg" alt="milkbottles" class="img-desktop-gallery">
-            <img src="./assets/img/desktop/image-gallery-orange.jpg" alt="orange" class="img-desktop-gallery">
-            <img src="./assets/img/desktop/image-gallery-cone.jpg" alt="ice-cream cone" class="img-desktop-gallery">
-            <img src="./assets/img/desktop/image-gallery-sugarcubes.jpg" alt="sugar cubes" class="img-desktop-gallery">
+            <div class="desktop-gallery">
+                <img src="./assets/img/desktop/image-gallery-milkbottles.jpg" alt="milkbottles" class="img-desktop-gallery">
+                <img src="./assets/img/desktop/image-gallery-orange.jpg" alt="orange" class="img-desktop-gallery">
+                <img src="./assets/img/desktop/image-gallery-cone.jpg" alt="ice-cream cone" class="img-desktop-gallery">
+                <img src="./assets/img/desktop/image-gallery-sugarcubes.jpg" alt="sugar cubes" class="img-desktop-gallery">
+            </div>
         </section>
     </main>
     
     <!--=============== FOOTER ===============-->
-    <footer>
-        <img src="./assets/img/logo.svg" alt="logo" class="footer-logo">
+    <footer id="contact">
+        <a href="#">
+            <img src="./assets/img/logo.svg" alt="logo" class="footer-logo">
+        </a>
         <ul class="footer-menu">
             <li>
                 <a href="#" class="menu-link">About</a>
             </li>
             <li>
-                <a href="#" class="menu-link">Services</a>
+                <a href="#services" class="menu-link">Services</a>
             </li>
             <li>
-                <a href="#" class="menu-link">Projects</a>
+                <a href="#projects" class="menu-link">Projects</a>
             </li>
         </ul>
 
         <ul class="social-media">
             <li>
-                <a href="#"><img src="./assets/img/icon-facebook.svg" alt="Facebook"></a>
+                <a href="https://es-la.facebook.com/" target="_blank">
+                    <img src="./assets/img/icon-facebook.svg" alt="Facebook">
+                </a>
             </li>
 
             <li>
-                <a href="#"><img src="./assets/img/icon-instagram.svg" alt="Instagram"></a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="./assets/img/icon-instagram.svg" alt="Instagram">
+                </a>
             </li>
 
             <li>
-                <a href="#"><img src="./assets/img/icon-twitter.svg" alt="Twitter"></a>
+                <a href="https://twitter.com/" target="_blank">
+                    <img src="./assets/img/icon-twitter.svg" alt="Twitter">
+                </a>
             </li>
 
             <li>
-                <a href="#"><img src="./assets/img/icon-pinterest.svg" alt="Pinterest"></a>
+                <a href="https://ar.pinterest.com/" target="_blank">
+                    <img src="./assets/img/icon-pinterest.svg" alt="Pinterest">
+                </a>
             </li>
         </ul>
     </footer>
 
+    <!--=============== SCROLL REVEAL ===============-->
+    <script src="./script/scrollreveal.min.js"></script>
     <!--=============== JS ===============-->
     <script src="./script/script.js"></script>
 </body>
