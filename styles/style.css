@@ -619,6 +619,16 @@ footer {
         padding: 0 19rem;
     }
 
+    .block-wrapper .text-block-overlay .description {
+        width: 63%;
+        text-align: center;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     /*=============== TESTIMONIAL SECTION ===============*/
     .clients-testimonial {
         padding: 12rem 2rem 7rem;
