@@ -397,6 +397,10 @@ h2 {
     flex: 50%;
 }
 
+.gallery-section .mobile-gallery {
+    width: 100%;
+}
+
 /*=============== FOOTER ===============*/
 footer {
     display: flex;
